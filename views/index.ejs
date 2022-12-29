@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="ar">
+<%- include("./partials/head") %>
+
+  <body id="body">
+    <%- include("./partials/header") %>
+
+      <main id="main">
+        <section>
+          <h1>Trending Clothes &#128293;</h1>
+
+          <div class="parent-of-articles">
+            <!-- 
+item = all elements inside Array
+
+ -->
+
+
+
+
+            <% arrArticle.forEach(item=> { %>
+
+              <article>
+                <img src= <%= item.image %> alt="swdfkjsdfgabdsfjgbadhfgbd"/>
+                <h4>detail</h4>
+                <div class="allph">
+                  <p class="discription_1">
+                    <%= item.discription_1 %>
+                  </p>
+                  
+                  <p class="price">
+                    <%= item.price %>     
+                      
+                  </p >
+
+                  
+                  
+                </div>
+                
+                
+                
+                <div class="mm">
+                  <a class="btn" href="/all-articles/<%= item._id %>">show more</a>
+
+                </div>
+
+              </article>
+
+              <% }); %>
+
+
+
+
+
+          </div>
+        </section>
+      </main>
+
+      <%- include("./partials/footer") %>
+  </body>
+
+</html>

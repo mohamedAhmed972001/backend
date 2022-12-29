@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="ar">
+  <%- include("./partials/head") %>
+
+  <body id="body">
+    <%- include("./partials/header") %>
+
+    <main id="main">
+      <section>
+        <h1>Create new article</h1>
+
+
+
+
+
+        
+        <form method="POST" action="/all-articles">
+          <label for="first_name">first name: </label>
+          <input name="first_name" id="first_name" type="text" />
+
+          
+
+
+          <label for="last_name">last name: </label>
+          <input name="last_name" id="last_name" type="text" />
+
+          <label for="password">password: </label>
+          <input name="password" id="password" type="text" />
+
+          <label for="email">email: </label>
+          <input name="email" id="email" type="text" />
+
+          <label for="phone_number">phone number: </label>
+          <input name="phone_number" id="phone_number" type="text" />
+
+          <button class="create">create</button>
+        </form>
+
+
+
+
+
+
+
+
+
+      </section>
+    </main>
+
+    <%- include("./partials/footer") %>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<%-  include("./partials/head")  %> 
+
+
+
+
+
+
+<body>
+    <%-  include("./partials/header")  %> 
+
+
+
+
+
+    <article class="n">
+        <img src= <%= objArticle.image %> alt="swdfkjsdfgabdsfjgbadhfgbd"/>
+        <h4>detail</h4>
+        <div class="allph">
+          <p class="discription_11">
+            <%= objArticle.discription_1 %>
+          </p>
+          <p class="discription_11">
+            <%= objArticle.discription_2 %>
+          </p>
+          <p class="discription_11">
+            <%= objArticle.discription_3 %>
+          </p>
+          
+          <p class="price_11">
+            <%= objArticle.price %>     
+              
+          </p >
+          <button class="create_1">Add to Card</button>
+
+          
+          
+        </div>
+        
+        
+        
+       
+
+      </article>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <%-  include("./partials/footer")  %> 
+</body>
+</html>
